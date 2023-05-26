@@ -24,6 +24,7 @@ YELLOW_LASER = pygame.image.load(os.path.join("assets", "pixel_laser_yellow.png"
 # Background
 BG = pygame.transform.scale(pygame.image.load(os.path.join("assets", "space.png")), (WIDTH, HEIGHT))
 
+#Laser Class
 class Laser:
     def __init__(self, x, y, img):
         self.x = x
