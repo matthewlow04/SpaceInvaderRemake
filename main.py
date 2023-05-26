@@ -232,7 +232,7 @@ def main():
             player.x -= player_vel*5
             boosts -= 1
 
-        if (keys[pygame.K_l] and player.x + player_vel*5 + player.get_width() > 0) and boosts > 0:
+        if (keys[pygame.K_l] and player.x + player_vel*5 + player.get_width() < WIDTH) and boosts > 0:
             player.x += player_vel*5
             boosts -= 1
 
